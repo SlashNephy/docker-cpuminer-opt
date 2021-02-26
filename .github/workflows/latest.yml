@@ -25,5 +25,6 @@ jobs:
       - name: Build & Push
         uses: docker/build-push-action@v2
         with:
+          context: .
           push: true
           tags: ${{ env.DOCKER_BASE_NAME }}:latest
